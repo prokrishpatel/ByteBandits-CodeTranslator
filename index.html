@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteBandits-CodeTranslator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="./b4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <header>ByteBandits-CodeTranslator</header>
+    <div class="content">
+        <div class="main">
+            <div class="input">
+                <!-- Add Drop Down List  -->
+                <select id="languageSelect" class="drop">
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="cpp">C++</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="csharp">C#</option>
+                    <option value="swift">Swift</option>
+                    <option value="go">Go</option>
+                    <option value="php">PHP</option>
+                    <option value="rust">Rust</option>
+                </select>
+                <textarea id="codeInput" rows="10" placeholder="Enter Your Code..."></textarea>
+
+            </div>
+            <div class="result">
+                <select id="languageOut" class="drop">
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="cpp">C++</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="csharp">C#</option>
+                    <option value="swift">Swift</option>
+                    <option value="go">Go</option>
+                    <option value="php">PHP</option>
+                    <option value="rust">Rust</option>
+                </select>
+
+            </div>
+        </div>
+        <footer>© ByteBandits 2024 - Patel_Krish Desai_Harshbhai Rajput_Ashish </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

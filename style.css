@@ -4,6 +4,18 @@ body, html {
     height: 100%;
     overflow: hidden;
 }
+::-webkit-scrollbar {
+    width: 5px
+  }
+  ::-webkit-scrollbar-track {
+    background:transparent; 
+  }
+::-webkit-scrollbar-thumb {
+   background-color: rgba(0, 0, 0, 0.652);
+    /* border-radius: 50px; */
+    border-radius: 10px;
+
+}
 
 #background-video {
     position: fixed;
@@ -69,6 +81,7 @@ header{
 .result{
     width: 50%;
     height: 100%;
+    position: relative;
    
 }
 footer{
@@ -96,7 +109,17 @@ footer{
     font-size: 1.2rem;
     resize: none;
 }
-
+#output{
+    width: 99%;
+    height: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    color: gray;
+    letter-spacing: 1px;
+    text-align: start;
+    overflow: auto;
+}
 #codeInput::before {
     content: "";
     position: absolute;
@@ -108,9 +131,31 @@ footer{
     background-size: 100% 20px; /* Adjust the line height here */
     z-index: -1;
 }
+.button {
+    background: linear-gradient(135deg, #2551af, #85078d);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 1s;
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+}
+
+.button:hover {
+    background: linear-gradient(225deg, #2551af, #85078d);
+}
+
 @media screen and (max-width:800px){
     .main{
-        width: 90%;
+        width: 95%;
         height: 85%;
     }
     .input{

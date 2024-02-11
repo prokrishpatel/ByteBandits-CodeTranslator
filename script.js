@@ -1,4 +1,4 @@
-const apiKey="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";
+const apiKey="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";
 const url="https://api.openai.com/v1/chat/completions" ;
 
 //copy code
@@ -117,9 +117,9 @@ translateLanguage.addEventListener('click',async ()=>{
     let changeTo = co2.value;
     let toDo="translateLanguage";
 
-    result.innerText = "Translating Language....";
+    result.innerHTML = "Translating Language....";
     const ans = await getResult(code,toDo,changeTo,changeFrom);
-    result.innerText = ans;
+    result.innerHTML = ans;
 });
 
 findBugs.addEventListener('click',async ()=>{
@@ -137,9 +137,9 @@ findBugs.addEventListener('click',async ()=>{
     let changeTo = co2.value;
     let toDo="findBugs";
 
-    result.innerText = "Finding bugs....";
+    result.innerHTML = "Finding bugs....";
     const ans = await getResult(code,toDo,changeTo,changeFrom);
-    result.innerText = ans;
+    result.innerHTML = ans;
 });
 
 resolveBugs.addEventListener('click',async ()=>{
@@ -157,9 +157,9 @@ resolveBugs.addEventListener('click',async ()=>{
     let changeTo = co2.value;
     let toDo="resolveBugs";
 
-    result.innerText = "Resolving bugs....";
+    result.innerHTML = "Resolving bugs....";
     const ans = await getResult(code,toDo,changeTo,changeFrom);
-    result.innerText = ans;
+    result.innerHTML = ans;
 });
 
 generateTestcases.addEventListener('click',async ()=>{
@@ -177,9 +177,9 @@ generateTestcases.addEventListener('click',async ()=>{
     let changeTo = co2.value;
     let toDo="generateTestCase";
 
-    result.innerText = "Generating Test Cases....";
+    result.innerHTML = "Generating Test Cases....";
     const ans = await getResult(code,toDo,changeTo,changeFrom);
-    result.innerText = ans;
+    result.innerHTML = ans;
 });
 
 improveCode.addEventListener('click',async ()=>{
@@ -197,7 +197,7 @@ improveCode.addEventListener('click',async ()=>{
     let changeTo = co2.value;
     let toDo="improveCode";
 
-    result.innerText = "Improving Code....";
+    result.innerHTML = "Improving Code....";
     const ans = await getResult(code,toDo,changeTo,changeFrom);
-    result.innerText = ans;
+    result.innerHTML = ans;
 });

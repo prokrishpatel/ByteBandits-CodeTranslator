@@ -53,17 +53,31 @@ header{
 .main{
     background-color: white;
     border-radius: 15px;
-    height: 80%;
+    height: 85%;
     width: 85%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.up{
+    width: 100%;
+    height: 90%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     overflow: auto;
     color: black;
+    border-bottom: 1px solid;
+}
+.down{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
 }
 .input{
     width: 49.9%;
-    height: 90%;
+    height: 100%;
     border-right: 1px dashed;
     border-spacing: 100px;
     position: relative;
@@ -144,16 +158,23 @@ footer{
     cursor: pointer;
     border-radius: 5px;
     transition: all 1s;
-    bottom: 8px;
-    right: 10px;
+    
 }
 
 .button:hover {
     background: linear-gradient(225deg, #2551af, #85078d);
 }
-
+.action{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #copyButton{
     position: absolute;
+    top: 10%;
+    right: 10px;
 }
 
 @media screen and (max-width:800px){

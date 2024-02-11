@@ -77,6 +77,7 @@ header{
     flex-wrap: wrap;
     
 }
+
 .input{
     width: 49.9%;
     height: 100%;
@@ -124,6 +125,7 @@ footer{
     outline: none;
     font-size: 1.2rem;
     resize: none;
+    
 }
 #output{
     width: 99%;

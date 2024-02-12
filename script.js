@@ -1,4 +1,4 @@
-const apiKey="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";
+const apiKey="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";
 const url="https://api.openai.com/v1/chat/completions" ;
 
 //copy code
